@@ -1,0 +1,9 @@
+./sim/run/verdiLog/*
+./sim/run/novas*
+./sim/run/csrc/**
+./sim/run/*.daidir
+./sim/run/simv*
+./sim/run/*.key
+./sim/run/*.fsdb
+./sim/run/*.log
+./impl/**

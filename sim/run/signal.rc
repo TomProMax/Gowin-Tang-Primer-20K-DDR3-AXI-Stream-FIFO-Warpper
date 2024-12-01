@@ -1,0 +1,147 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1908 439 279 350
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/mnt/c/LinuxWorkSpace/GowinPrj/gowin_ddr_rw_demo/sim/run/test.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+windowTimeUnit 1ps
+
+; waveform viewport range
+zoom 2250915464.000000 2502490845.360000 1p
+cursor 2319973832.000000
+marker 5002309992.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 27
+; marker line index
+markerPos 43
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+aliasmapname iir_sos.cstate
+nalias WORK		3'b010		NULL
+nalias IDLE		3'b001		NULL
+nalias ERROR		3'b100		NULL
+
+aliasmapname ddr3_rw_controller.cstate
+nalias RD_ADDR		5'b01000		NULL
+nalias ARBIT		5'b00010		NULL
+nalias IDLE		4'b0001		NULL
+nalias WRITE		4'b0100		NULL
+nalias RD_DATA		5'b10000		NULL
+nalias WRITE		5'b00100		NULL
+nalias IDLE		5'b00001		NULL
+nalias ARBIT		4'b0010		NULL
+nalias READ		4'b1000		NULL
+
+addGroup "system"
+activeDirFile "" "/mnt/c/LinuxWorkSpace/GowinPrj/gowin_ddr_rw_demo/sim/run/test.fsdb"
+addSignal -h 15 /tb/osc_clk
+addSignal -h 15 -holdScope init_calib_complete
+addGroup "axis slave (wr)"
+addSignal -h 15 /tb/s_axis_aclk
+addSignal -h 15 -holdScope s_axis_tready
+addSignal -h 15 -holdScope s_axis_tvaild
+addSignal -h 15 -holdScope s_axis_tdata[15:0]
+addGroup "axis master (rd)"
+addSignal -h 15 /tb/m_axis_aclk
+addSignal -h 15 -holdScope m_axis_tready
+addSignal -h 15 /tb/u_ddr3_rw_controller/m_axis_tvaild
+addSignal -h 15 /tb/m_axis_tdata[15:0]
+addGroup "wr_fifo"
+addSignal -h 15 /tb/u_ddr3_rw_controller/app_clk
+addSignal -h 15 -holdScope app_wdf_wren
+addSignal -h 15 -holdScope app_wdf_data[127:0]
+addSignal -h 15 -holdScope wr_fifo_wnum[5:0]
+addSignal -h 15 -holdScope wr_fifo_rnum[2:0]
+addGroup "rd_fifo"
+addSignal -h 15 /tb/u_ddr3_rw_controller/app_clk
+addSignal -h 15 -holdScope app_rd_data_vaild
+addSignal -h 15 -holdScope app_rd_data[127:0]
+addSignal -h 15 -holdScope rd_fifo_wnum[2:0]
+addSignal -h 15 -holdScope rd_fifo_rnum[5:0]
+addGroup "cmd channel"
+addSignal -h 15 /tb/u_ddr3_rw_controller/app_rdy
+addSignal -h 15 -holdScope app_en
+addSignal -h 15 -holdScope app_cmd[2:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope app_addr[26:0]
+addGroup "wr_dat channel"
+addSignal -h 15 /tb/u_ddr3_rw_controller/app_wdf_rdy
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/wr_data_mask[15:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/app_wdf_data[127:0]
+addSignal -h 15 -holdScope app_wdf_wren
+addSignal -h 15 -holdScope app_wdf_end
+addGroup "rd_dat channel"
+addSignal -h 15 /tb/u_ddr3_rw_controller/app_rd_data[127:0]
+addSignal -h 15 -holdScope app_rd_data_vaild
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/rd_data_end
+addGroup "process"
+aliasname ddr3_rw_controller.cstate
+addSignal -h 15 -UNSIGNED -HEX /tb/u_ddr3_rw_controller/cstate[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope ddr_dat_num[15:0]
+addSignal -h 15 -holdScope ddr_empty
+addGroup "DDR memeroy int" -e FALSE
+addSignal -h 15 /tb/ddr3_addr[12:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_addr[12:0]
+addSignal -h 15 /tb/ddr3_ba[2:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_ba[2:0]
+addSignal -h 15 /tb/ddr3_cs_n[0:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_cs_n
+addSignal -h 15 /tb/ddr3_ras_n
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_ras_n
+addSignal -h 15 /tb/ddr3_cas_n
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_cas_n
+addSignal -h 15 /tb/ddr3_we_n
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_we_n
+addSignal -h 15 /tb/ddr3_ck_p[0:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_clk
+addSignal -h 15 /tb/ddr3_ck_n[0:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_clk_n
+addSignal -h 15 /tb/ddr3_cke[0:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_cke
+addSignal -h 15 /tb/ddr3_odt[0:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_odt
+addSignal -h 15 /tb/ddr3_reset_n
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_reset_n
+addSignal -h 15 /tb/ddr3_dm[1:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/O_ddr_dqm[1:0]
+addSignal -h 15 /tb/ddr3_dq[15:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/IO_ddr_dq[15:0]
+addSignal -h 15 /tb/ddr3_dqs_p[1:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/IO_ddr_dqs[1:0]
+addSignal -h 15 /tb/ddr3_dqs_n[1:0]
+addSignal -h 15 /tb/u_ddr3_rw_controller/u_DDR3_Memory_Interface_Top/IO_ddr_dqs_n[1:0]
+addGroup "G12"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+
