@@ -2,8 +2,8 @@
  * @Author: Tomood
  * @Date: 2024-11-18 21:33:43
  * @LastEditors: Tomood
- * @LastEditTime: 2024-12-01 11:45:52
- * @FilePath: \gowin_ddr_rw_demo\src\ddr3_rw_controller.v
+ * @LastEditTime: 2024-12-01 19:43:19
+ * @FilePath: \Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_rw_controller.v
  * @Description: gowin 20K DDR3 mem interface ip axi4 stream fifo wrapper
  * Copyright (c) 2024 by Tomood, All Rights Reserved. 
  */
@@ -74,10 +74,10 @@ wire pll_lock;
 
 
 //buffer fifo
-wire [5:0] 	 wr_fifo_wnum; //读数据缓存fifo的写侧(user axis侧)同步水位信号
-wire [2:0] 	 wr_fifo_rnum; //写数据缓存fifo的读侧(ddr    ip侧)同步水位信号
-wire [2:0] 	 rd_fifo_wnum; //读数据缓存fifo的写侧(ddr    ip侧)同步水位信号
-wire [5:0] 	 rd_fifo_rnum; //读数据缓存fifo的读侧(user axis侧)同步水位信号
+wire [5:0] 	 wr_fifo_wnum   ; //读数据缓存fifo的写侧(user axis侧)同步水位信号
+wire [2:0] 	 wr_fifo_rnum   ; //写数据缓存fifo的读侧(ddr    ip侧)同步水位信号
+wire [2:0] 	 rd_fifo_wnum   ; //读数据缓存fifo的写侧(ddr    ip侧)同步水位信号
+wire [5:0] 	 rd_fifo_rnum   ; //读数据缓存fifo的读侧(user axis侧)同步水位信号
 
 
 //ddr wrapper
@@ -90,6 +90,8 @@ reg [16-1:0] ddr_rd_ptr	    ; //ddr封装成fifo的读地址指针 128bit
 reg [16-1:0] ddr_dat_num    ; //ddr内部存有数据的个数 128bit*num
 wire         ddr_full	    ; //ddr full
 wire         ddr_empty	    ; //ddr empty
+
+reg [2:0]	 ddr_rd_req_cnt ; //ddr读请求计数器 记录目前正在处理的读请求的个数
 
 /*********************************************************************************/
 /******************************        fsm          ******************************/
@@ -180,7 +182,7 @@ always @(posedge app_clk or negedge rst_n) begin
 	if(!rst_n) begin
 		ddr_wr_req <= 1'b0;
 	end else if((wr_fifo_rnum == 1) && (ddr_wr_req_cd == 2'd0) && (cstate != WRITE))begin
-		ddr_wr_req <= 1'b1;//如果只有1个数据 需要等待cd 且不允许连续请求
+		ddr_wr_req <= 1'b1;//如果只有1个数据 需要等待cd 且不允许连续请求(防止wrfifo水位更新不及时导致错误)
 	end else if(wr_fifo_rnum > 1) begin
 		//当水位满足大于突发长度
 		ddr_wr_req <= 1'b1;//请求ddr ip 发送
@@ -193,11 +195,24 @@ end
 always @(posedge app_clk or negedge rst_n) begin
 	if(!rst_n) begin
 		ddr_rd_req <= 1'b0;
-	end else if (rd_fifo_wnum < 2) begin
-		//当rd fifo 的写时钟域同步水位小于2
+	end else if (rd_fifo_wnum + ddr_rd_req_cnt < 2) begin
+		//当rd fifo 的写时钟域同步水位小于2(包括已经向DDR IP请求了 但尚未返回的数据)
 		ddr_rd_req <= 1'b1;//请求ddr ip 读取
 	end else begin
 		ddr_rd_req <= 1'b0;
+	end
+end
+
+//ddr_rd_req_cnt: ddr读请求计数器 记录目前正在处理的读请求的个数
+always @(posedge app_clk or negedge rst_n) begin
+	if(!rst_n) begin
+		ddr_rd_req_cnt <= 0;
+	end else if ((cstate==READ) && app_rd_data_vaild) begin
+		ddr_rd_req_cnt <= ddr_rd_req_cnt;
+	end else if ((cstate!=READ) && app_rd_data_vaild) begin
+		ddr_rd_req_cnt <= ddr_rd_req_cnt - 1'b1;
+	end else if ((cstate==READ) && !app_rd_data_vaild) begin
+		ddr_rd_req_cnt <= ddr_rd_req_cnt + 1'b1;
 	end
 end
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
+    <FileList>
+        <File path="C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_memory_interface\ddr3_memory_interface.v" type="verilog"/>
+        <File path="C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_rw_controller.v" type="verilog"/>
+        <File path="C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_test_top.v" type="verilog"/>
+        <File path="C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_rd_fifo\ddr_rd_fifo.v" type="verilog"/>
+        <File path="C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_wr_fifo\ddr_wr_fifo.v" type="verilog"/>
+        <File path="C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\gowin_rpll\ddr_rpll.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\impl\gwsynthesis\gowin_ddr_rw_demo.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="vcc" value="1.0"/>
+        <Option type="vccx" value="3.3"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

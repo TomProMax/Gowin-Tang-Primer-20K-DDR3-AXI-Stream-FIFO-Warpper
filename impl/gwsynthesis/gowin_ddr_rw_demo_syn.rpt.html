@@ -1,0 +1,2574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_memory_interface\ddr3_memory_interface.v<br>
+C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_rw_controller.v<br>
+C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_test_top.v<br>
+C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_rd_fifo\ddr_rd_fifo.v<br>
+C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_wr_fifo\ddr_wr_fifo.v<br>
+C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\gowin_rpll\ddr_rpll.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.10 (64-bit)</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2A-LV18PG256C8/I7</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW2A-18</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>C</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Sun Dec  1 19:38:15 2024
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2024 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>ddr3_rw_controller</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.656s, Elapsed time = 0h 0m 1s, Peak memory usage = 187.168MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.169s, Peak memory usage = 187.168MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.147s, Peak memory usage = 187.168MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 0.125s, Elapsed time = 0h 0m 0.185s, Peak memory usage = 187.168MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 0.156s, Elapsed time = 0h 0m 0.118s, Peak memory usage = 187.168MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.013s, Peak memory usage = 187.168MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.031s, Peak memory usage = 187.168MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.011s, Peak memory usage = 187.168MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 0.093s, Elapsed time = 0h 0m 0.15s, Peak memory usage = 187.168MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.094s, Peak memory usage = 187.168MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 0.031s, Elapsed time = 0h 0m 0.037s, Peak memory usage = 187.168MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 0m 0.296s, Elapsed time = 0h 0m 0.391s, Peak memory usage = 204.496MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 0.156s, Elapsed time = 0h 0m 0.157s, Peak memory usage = 204.496MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0.5s, Elapsed time = 0h 0m 0.547s, Peak memory usage = 217.445MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 0m 2s, Elapsed time = 0h 0m 3s, Peak memory usage = 217.445MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>88</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>85</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>22</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>42</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIOBUF</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_OBUF</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspELVDS_IOBUF</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>3725</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFF</td>
+<td>225</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>244</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFS</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFR</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>65</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>10</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>2634</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>545</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>2432</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>526</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>874</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>1032</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>192</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>192</td>
+</tr>
+<tr>
+<td class="label"><b>SSRAM </b></td>
+<td>136</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16S4</td>
+<td>44</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspRAM16SDP4</td>
+<td>92</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>33</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>33</td>
+</tr>
+<tr>
+<td class="label"><b>IOLOGIC </b></td>
+<td>75</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIDES8_MEM</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER8</td>
+<td>23</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSER8_MEM</td>
+<td>20</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIODELAY</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPX9B</td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspCLKDIV</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDQS</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDHCEN</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprPLL</td>
+<td>1</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>3473(2465 LUT, 192 ALU, 136 RAM16) / 20736</td>
+<td>17%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>3725 / 16173</td>
+<td>24%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>0 / 16173</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>3725 / 16173</td>
+<td>24%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>12 / 46</td>
+<td>27%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>clk</td>
+<td>Base</td>
+<td>37.037</td>
+<td>27.0</td>
+<td>0.000</td>
+<td>18.519</td>
+<td> </td>
+<td> </td>
+<td>clk_ibuf/I </td>
+</tr>
+<tr>
+<td>s_axis_aclk</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>s_axis_aclk_ibuf/I </td>
+</tr>
+<tr>
+<td>m_axis_aclk</td>
+<td>Base</td>
+<td>10.000</td>
+<td>100.0</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td>m_axis_aclk_ibuf/I </td>
+</tr>
+<tr>
+<td>u_DDR_rPLL/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>2.511</td>
+<td>398.2</td>
+<td>0.000</td>
+<td>1.255</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>u_DDR_rPLL/rpll_inst/CLKOUT </td>
+</tr>
+<tr>
+<td>u_DDR_rPLL/rpll_inst/CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>2.511</td>
+<td>398.2</td>
+<td>0.000</td>
+<td>1.255</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>u_DDR_rPLL/rpll_inst/CLKOUTP </td>
+</tr>
+<tr>
+<td>u_DDR_rPLL/rpll_inst/CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>5.022</td>
+<td>199.1</td>
+<td>0.000</td>
+<td>2.511</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>u_DDR_rPLL/rpll_inst/CLKOUTD </td>
+</tr>
+<tr>
+<td>u_DDR_rPLL/rpll_inst/CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>7.533</td>
+<td>132.8</td>
+<td>0.000</td>
+<td>3.766</td>
+<td>clk_ibuf/I</td>
+<td>clk</td>
+<td>u_DDR_rPLL/rpll_inst/CLKOUTD3 </td>
+</tr>
+<tr>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>10.044</td>
+<td>99.6</td>
+<td>0.000</td>
+<td>5.022</td>
+<td>u_DDR_rPLL/rpll_inst/CLKOUT</td>
+<td>u_DDR_rPLL/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>No.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>clk</td>
+<td>27.000(MHz)</td>
+<td>181.884(MHz)</td>
+<td>6</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>s_axis_aclk</td>
+<td>100.000(MHz)</td>
+<td>261.233(MHz)</td>
+<td>4</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>m_axis_aclk</td>
+<td>100.000(MHz)</td>
+<td>145.658(MHz)</td>
+<td>8</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>u_DDR_rPLL/rpll_inst/CLKOUT.default_gen_clk</td>
+<td>398.250(MHz)</td>
+<td>1030.928(MHz)</td>
+<td>1</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>5</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+<td>99.562(MHz)</td>
+<td>179.019(MHz)</td>
+<td>3</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-4.221</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>486.961</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>482.740</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_7_G[28]_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>41</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>481.841</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/CLK</td>
+</tr>
+<tr>
+<td>482.073</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>3098</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/Q</td>
+</tr>
+<tr>
+<td>482.547</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/I1</td>
+</tr>
+<tr>
+<td>483.102</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/F</td>
+</tr>
+<tr>
+<td>483.576</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/I2</td>
+</tr>
+<tr>
+<td>484.029</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>13</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/F</td>
+</tr>
+<tr>
+<td>484.503</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/I0</td>
+</tr>
+<tr>
+<td>485.020</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/F</td>
+</tr>
+<tr>
+<td>485.494</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/I1</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/COUT</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/CIN</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/COUT</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/CIN</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/COUT</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/CIN</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/COUT</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/CIN</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/COUT</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/CIN</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/COUT</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/CIN</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/COUT</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/CIN</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/COUT</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/CIN</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/COUT</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/CIN</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/COUT</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/CIN</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/COUT</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/CIN</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/COUT</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/CIN</td>
+</tr>
+<tr>
+<td>486.487</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>8</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/COUT</td>
+</tr>
+<tr>
+<td>486.961</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_7_G[28]_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>482.109</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>482.450</td>
+<td>0.341</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3852</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>482.810</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_7_G[28]_s0/CLK</td>
+</tr>
+<tr>
+<td>482.775</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_7_G[28]_s0</td>
+</tr>
+<tr>
+<td>482.740</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_7_G[28]_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.341</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.628</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 2.517, 49.174%; route: 2.370, 46.294%; tC2Q: 0.232, 4.532%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-4.221</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>486.961</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>482.740</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_6_G[28]_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>41</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>481.841</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/CLK</td>
+</tr>
+<tr>
+<td>482.073</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>3098</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/Q</td>
+</tr>
+<tr>
+<td>482.547</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/I1</td>
+</tr>
+<tr>
+<td>483.102</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/F</td>
+</tr>
+<tr>
+<td>483.576</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/I2</td>
+</tr>
+<tr>
+<td>484.029</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>13</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/F</td>
+</tr>
+<tr>
+<td>484.503</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/I0</td>
+</tr>
+<tr>
+<td>485.020</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/F</td>
+</tr>
+<tr>
+<td>485.494</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/I1</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/COUT</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/CIN</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/COUT</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/CIN</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/COUT</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/CIN</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/COUT</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/CIN</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/COUT</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/CIN</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/COUT</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/CIN</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/COUT</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/CIN</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/COUT</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/CIN</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/COUT</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/CIN</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/COUT</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/CIN</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/COUT</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/CIN</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/COUT</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/CIN</td>
+</tr>
+<tr>
+<td>486.487</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>8</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/COUT</td>
+</tr>
+<tr>
+<td>486.961</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_6_G[28]_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>482.109</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>482.450</td>
+<td>0.341</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3852</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>482.810</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_6_G[28]_s0/CLK</td>
+</tr>
+<tr>
+<td>482.775</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_6_G[28]_s0</td>
+</tr>
+<tr>
+<td>482.740</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_6_G[28]_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.341</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.628</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 2.517, 49.174%; route: 2.370, 46.294%; tC2Q: 0.232, 4.532%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-4.221</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>486.961</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>482.740</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_5_G[28]_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>41</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>481.841</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/CLK</td>
+</tr>
+<tr>
+<td>482.073</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>3098</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/Q</td>
+</tr>
+<tr>
+<td>482.547</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/I1</td>
+</tr>
+<tr>
+<td>483.102</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/F</td>
+</tr>
+<tr>
+<td>483.576</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/I2</td>
+</tr>
+<tr>
+<td>484.029</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>13</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/F</td>
+</tr>
+<tr>
+<td>484.503</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/I0</td>
+</tr>
+<tr>
+<td>485.020</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/F</td>
+</tr>
+<tr>
+<td>485.494</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/I1</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/COUT</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/CIN</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/COUT</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/CIN</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/COUT</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/CIN</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/COUT</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/CIN</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/COUT</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/CIN</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/COUT</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/CIN</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/COUT</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/CIN</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/COUT</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/CIN</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/COUT</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/CIN</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/COUT</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/CIN</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/COUT</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/CIN</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/COUT</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/CIN</td>
+</tr>
+<tr>
+<td>486.487</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>8</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/COUT</td>
+</tr>
+<tr>
+<td>486.961</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_5_G[28]_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>482.109</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>482.450</td>
+<td>0.341</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3852</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>482.810</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_5_G[28]_s0/CLK</td>
+</tr>
+<tr>
+<td>482.775</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_5_G[28]_s0</td>
+</tr>
+<tr>
+<td>482.740</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_5_G[28]_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.341</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.628</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 2.517, 49.174%; route: 2.370, 46.294%; tC2Q: 0.232, 4.532%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-4.221</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>486.961</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>482.740</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_4_G[28]_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>41</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>481.841</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/CLK</td>
+</tr>
+<tr>
+<td>482.073</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>3098</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/Q</td>
+</tr>
+<tr>
+<td>482.547</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/I1</td>
+</tr>
+<tr>
+<td>483.102</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/F</td>
+</tr>
+<tr>
+<td>483.576</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/I2</td>
+</tr>
+<tr>
+<td>484.029</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>13</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/F</td>
+</tr>
+<tr>
+<td>484.503</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/I0</td>
+</tr>
+<tr>
+<td>485.020</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/F</td>
+</tr>
+<tr>
+<td>485.494</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/I1</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/COUT</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/CIN</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/COUT</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/CIN</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/COUT</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/CIN</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/COUT</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/CIN</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/COUT</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/CIN</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/COUT</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/CIN</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/COUT</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/CIN</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/COUT</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/CIN</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/COUT</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/CIN</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/COUT</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/CIN</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/COUT</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/CIN</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/COUT</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/CIN</td>
+</tr>
+<tr>
+<td>486.487</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>8</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/COUT</td>
+</tr>
+<tr>
+<td>486.961</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_4_G[28]_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>482.109</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>482.450</td>
+<td>0.341</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3852</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>482.810</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_4_G[28]_s0/CLK</td>
+</tr>
+<tr>
+<td>482.775</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_4_G[28]_s0</td>
+</tr>
+<tr>
+<td>482.740</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_4_G[28]_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.341</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.628</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 2.517, 49.174%; route: 2.370, 46.294%; tC2Q: 0.232, 4.532%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-4.221</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>486.961</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>482.740</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_3_G[28]_s0</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>clk</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>clk_ibuf/I</td>
+</tr>
+<tr>
+<td>481.481</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>41</td>
+<td>clk_ibuf/O</td>
+</tr>
+<tr>
+<td>481.841</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/CLK</td>
+</tr>
+<tr>
+<td>482.073</td>
+<td>0.232</td>
+<td>tC2Q</td>
+<td>RF</td>
+<td>3098</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/ddr_rsti_reg_2_s0/Q</td>
+</tr>
+<tr>
+<td>482.547</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/I1</td>
+</tr>
+<tr>
+<td>483.102</td>
+<td>0.555</td>
+<td>tINS</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s8/F</td>
+</tr>
+<tr>
+<td>483.576</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/I2</td>
+</tr>
+<tr>
+<td>484.029</td>
+<td>0.453</td>
+<td>tINS</td>
+<td>FF</td>
+<td>13</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_init_s9/F</td>
+</tr>
+<tr>
+<td>484.503</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/I0</td>
+</tr>
+<tr>
+<td>485.020</td>
+<td>0.517</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/row_in_tmp[0]_ER_s25/F</td>
+</tr>
+<tr>
+<td>485.494</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/I1</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.570</td>
+<td>tINS</td>
+<td>FR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n443_s0/COUT</td>
+</tr>
+<tr>
+<td>486.064</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>RR</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/CIN</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>RF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n444_s0/COUT</td>
+</tr>
+<tr>
+<td>486.100</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/CIN</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n445_s0/COUT</td>
+</tr>
+<tr>
+<td>486.135</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/CIN</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n446_s0/COUT</td>
+</tr>
+<tr>
+<td>486.170</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/CIN</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n447_s0/COUT</td>
+</tr>
+<tr>
+<td>486.205</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/CIN</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n448_s0/COUT</td>
+</tr>
+<tr>
+<td>486.240</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/CIN</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n449_s0/COUT</td>
+</tr>
+<tr>
+<td>486.276</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/CIN</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n450_s0/COUT</td>
+</tr>
+<tr>
+<td>486.311</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/CIN</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n451_s0/COUT</td>
+</tr>
+<tr>
+<td>486.346</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/CIN</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n452_s0/COUT</td>
+</tr>
+<tr>
+<td>486.381</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/CIN</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n453_s0/COUT</td>
+</tr>
+<tr>
+<td>486.416</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/CIN</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n454_s0/COUT</td>
+</tr>
+<tr>
+<td>486.452</td>
+<td>0.000</td>
+<td>tNET</td>
+<td>FF</td>
+<td>2</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/CIN</td>
+</tr>
+<tr>
+<td>486.487</td>
+<td>0.035</td>
+<td>tINS</td>
+<td>FF</td>
+<td>8</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/n455_s0/COUT</td>
+</tr>
+<tr>
+<td>486.961</td>
+<td>0.474</td>
+<td>tNET</td>
+<td>FF</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_3_G[28]_s0/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>482.109</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk</td>
+</tr>
+<tr>
+<td>482.450</td>
+<td>0.341</td>
+<td>tCL</td>
+<td>RR</td>
+<td>3852</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT</td>
+</tr>
+<tr>
+<td>482.810</td>
+<td>0.360</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_3_G[28]_s0/CLK</td>
+</tr>
+<tr>
+<td>482.775</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_3_G[28]_s0</td>
+</tr>
+<tr>
+<td>482.740</td>
+<td>-0.035</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_DDR3_Memory_Interface_Top/gw3_top/u_gwmc_top/gw_cmd0/mem_mem_RAMREG_3_G[28]_s0</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.341</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.628</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>7</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 2.517, 49.174%; route: 2.370, 46.294%; tC2Q: 0.232, 4.532%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.360, 100.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="ddr3_rw_controller" Register="59" Alu="49" Lut="54" T_Register="3725(59)" T_Alu="192(49)" T_Lut="2465(54)" T_Bsram="12(0)" T_Ssram="136(0)">
+    <SubModule name="u_DDR_rPLL"/>
+    <SubModule name="u_ddr_wr_fifo" Register="40" Alu="9" Lut="31" Bsram="4" T_Register="40(40)" T_Alu="9(9)" T_Lut="31(31)" T_Bsram="4(4)"/>
+    <SubModule name="u_ddr_rd_fifo" Register="40" Alu="11" Lut="223" Bsram="4" T_Register="40(40)" T_Alu="11(11)" T_Lut="223(223)" T_Bsram="4(4)"/>
+    <SubModule name="u_DDR3_Memory_Interface_Top" Register="3586" Alu="123" Lut="2157" Bsram="4" Ssram="136" T_Register="3586(3586)" T_Alu="123(123)" T_Lut="2157(2157)" T_Bsram="4(4)" T_Ssram="136(136)"/>
+</Module>

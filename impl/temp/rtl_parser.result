@@ -1,0 +1,74 @@
+[
+ {
+  "InstFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_rw_controller.v",
+  "InstLine" : 12,
+  "InstName" : "ddr3_rw_controller",
+  "ModuleFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_rw_controller.v",
+  "ModuleLine" : 12,
+  "ModuleName" : "ddr3_rw_controller",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_rw_controller.v",
+    "InstLine" : 292,
+    "InstName" : "u_DDR_rPLL",
+    "ModuleFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/gowin_rpll/ddr_rpll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "DDR_rPLL"
+   },
+   {
+    "InstFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_rw_controller.v",
+    "InstLine" : 299,
+    "InstName" : "u_ddr_wr_fifo",
+    "ModuleFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr_wr_fifo/ddr_wr_fifo.v",
+    "ModuleLine" : 318,
+    "ModuleName" : "ddr_wr_fifo",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr_wr_fifo/ddr_wr_fifo.v",
+      "InstLine" : 345,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr_wr_fifo/ddr_wr_fifo.v",
+      "ModuleLine" : 13,
+      "ModuleName" : "~fifo.ddr_wr_fifo"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_rw_controller.v",
+    "InstLine" : 317,
+    "InstName" : "u_ddr_rd_fifo",
+    "ModuleFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr_rd_fifo/ddr_rd_fifo.v",
+    "ModuleLine" : 894,
+    "ModuleName" : "ddr_rd_fifo",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr_rd_fifo/ddr_rd_fifo.v",
+      "InstLine" : 921,
+      "InstName" : "fifo_inst",
+      "ModuleFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr_rd_fifo/ddr_rd_fifo.v",
+      "ModuleLine" : 13,
+      "ModuleName" : "~fifo.ddr_rd_fifo"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_rw_controller.v",
+    "InstLine" : 335,
+    "InstName" : "u_DDR3_Memory_Interface_Top",
+    "ModuleFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_memory_interface/ddr3_memory_interface.v",
+    "ModuleLine" : 19555,
+    "ModuleName" : "DDR3_Memory_Interface_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_memory_interface/ddr3_memory_interface.v",
+      "InstLine" : 19638,
+      "InstName" : "gw3_top",
+      "ModuleFile" : "C:/LinuxWorkSpace/GowinPrj/Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper/src/ddr3_memory_interface/ddr3_memory_interface.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "~GW_DDR3_PHY_MC.DDR3_Memory_Interface_Top"
+     }
+    ]
+   }
+  ]
+ }
+]

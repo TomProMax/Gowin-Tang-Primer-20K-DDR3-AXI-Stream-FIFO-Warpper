@@ -6,4 +6,4 @@
 ./sim/run/*.key
 ./sim/run/*.fsdb
 ./sim/run/*.log
-./impl/**
+./impl/*

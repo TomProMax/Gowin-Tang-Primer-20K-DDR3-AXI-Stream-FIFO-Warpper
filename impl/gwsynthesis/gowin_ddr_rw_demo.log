@@ -1,0 +1,40 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_memory_interface\ddr3_memory_interface.v'
+Analyzing Verilog file 'C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_rw_controller.v'
+Analyzing Verilog file 'C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_test_top.v'
+Analyzing Verilog file 'C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_rd_fifo\ddr_rd_fifo.v'
+Analyzing Verilog file 'C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_wr_fifo\ddr_wr_fifo.v'
+Analyzing Verilog file 'C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\gowin_rpll\ddr_rpll.v'
+Compiling module 'ddr3_rw_controller'("C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_rw_controller.v":12)
+Compiling module 'DDR_rPLL'("C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\gowin_rpll\ddr_rpll.v":10)
+Compiling module 'ddr_wr_fifo'("C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_wr_fifo\ddr_wr_fifo.v":318)
+Compiling module '**'("C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_wr_fifo\ddr_wr_fifo.v":317)
+Compiling module 'ddr_rd_fifo'("C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_rd_fifo\ddr_rd_fifo.v":894)
+Compiling module '**'("C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr_rd_fifo\ddr_rd_fifo.v":893)
+Compiling module 'DDR3_Memory_Interface_Top'("C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_memory_interface\ddr3_memory_interface.v":19555)
+Compiling module '**'("C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\src\ddr3_memory_interface\ddr3_memory_interface.v":19554)
+NOTE  (EX0101) : Current top module is "ddr3_rw_controller"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\impl\gwsynthesis\gowin_ddr_rw_demo.vg" completed
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk" and "s_axis_aclk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "s_axis_aclk" and "u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "m_axis_aclk" and "u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "u_DDR3_Memory_Interface_Top/gw3_top/u_ddr_phy_top/fclkdiv/CLKOUT.default_gen_clk" and "m_axis_aclk"
+[100%] Generate report file "C:\LinuxWorkSpace\GowinPrj\Gowin-Tang-Primer-20K-DDR3-AXI-Stream-FIFO-Warpper\impl\gwsynthesis\gowin_ddr_rw_demo_syn.rpt.html" completed
+GowinSynthesis finish
